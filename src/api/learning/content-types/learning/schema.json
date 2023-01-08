@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "learnings",
+  "info": {
+    "singularName": "learning",
+    "pluralName": "learnings",
+    "displayName": "Learning",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Topic": {
+      "type": "string",
+      "required": true
+    },
+    "Text": {
+      "type": "richtext"
+    },
+    "Subtitle": {
+      "type": "text"
+    },
+    "Model": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

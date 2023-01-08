@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "audio_stops",
+  "info": {
+    "singularName": "audio-stop",
+    "pluralName": "audio-stops",
+    "displayName": "audio-stop",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "stop": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "unique": true
+    },
+    "text": {
+      "type": "text"
+    },
+    "audio": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
