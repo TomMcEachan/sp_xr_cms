@@ -17,5 +17,7 @@ steps:
 
 - script: |
     yarn install
-    yarn run build
-  displayName: 'Install and Build'
+  displayName: 'Install Dependencies'
+- script: |
+    yarn build
+
